@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos del Mouse</title>
+    <style>
+        body{
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .flex-display{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #board{
+            background-color: greenyellow;
+            width: 40vw;
+            height: 20vh;
+        }
+    </style>
+</head>
+<body class="flex-display">
+    <div id="board" class="flex-display">
+        <h1 id="boardLabel">Hover me!</h1>
+    </div>
+
+    <p>Double-click counter: <span id="dblclick-counter">0</span></p>
+    <p>Mouse position: x= <span id="x-coordenate">0</span>, y= <span id="y-coordenate">0</span></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
